@@ -87,7 +87,7 @@ button:hover, .MuiButton-root:hover {
   color: var(--almond-color) !important;
 }
 h1, h2, h3, h4, h5, h6, p, span, div, label, input, textarea, li, a {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', sans-serif !important;
   text-transform: none;
   font-weight: 800 !important;
 }
@@ -121,4 +121,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, label, input, textarea, li, a {
 .resume-btn:hover, .resume-btn:focus {
   background: rgb(44, 62, 80) !important;
   color: white !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span, div, label, input, textarea, li, a, button {
+  font-family: 'League Spartan', sans-serif !important;
 }

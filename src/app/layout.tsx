@@ -6,7 +6,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Peter Ling",
-  description: "Personal portfolio website of Peter Ling - Engineer, Developer, Designer",
+  description: "Peter Ling's Personal Website",
+  icons: [
+    {
+      rel: 'icon',
+      url: '/favicon.ico',
+    },
+    {
+      rel: 'icon',
+      url: '/favicon.png',
+    }
+  ],
 };
 
 export default function RootLayout({

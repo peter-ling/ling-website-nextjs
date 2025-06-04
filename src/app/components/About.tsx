@@ -14,7 +14,7 @@ export default function About() {
     }}>
       <Container maxWidth="lg" sx={{ color: 'rgb(44, 62, 80)' }}>
         <Typography variant="h2" sx={{
-          fontSize: { xs: '2rem', md: '2.5rem' },
+          fontSize: { xs: '2.2rem', md: '2.7rem' },
           fontWeight: 800,
           fontFamily: '"LeagueSpartan", sans-serif',
           color: 'rgb(44, 62, 80)',
@@ -26,7 +26,7 @@ export default function About() {
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
             <Typography variant="body1" sx={{ 
-              fontSize: '1.1rem',
+              fontSize: '1.3rem',
               lineHeight: 1.8,
               color: 'rgb(44, 62, 80)',
               marginBottom: 2
@@ -34,7 +34,7 @@ export default function About() {
               I grew up in Pacific Palisades, CA and now attend Stanford University, where I&apos;ve become passionate about building products and tools to help individuals live more efficient and socially connected lives.
             </Typography>
             <Typography variant="body1" sx={{ 
-              fontSize: '1.1rem',
+              fontSize: '1.3rem',
               lineHeight: 1.8,
               color: 'rgb(44, 62, 80)'
             }}>
@@ -49,16 +49,16 @@ export default function About() {
                   <img src="/images/stanford-logo.png" alt="Stanford Logo" style={{ width: '100px', height: 'auto' }} />
                 </a>
                 <Box sx={{ border: 'none' }}>
-                  <Typography sx={{ fontWeight: 600, mb: '0.5rem', fontSize: '1.1rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
+                  <Typography sx={{ fontWeight: 600, mb: '0.5rem', fontSize: '1.15rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
                     Stanford University
                   </Typography>
-                  <Typography sx={{ mb: '0.3rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
-                    B.S. Computer Science '24
+                  <Typography sx={{ mb: '0.3rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif', fontSize: '1.05rem' }}>
+                    B.S. Computer Science &apos;24
                   </Typography>
-                  <Typography sx={{ mb: '0.3rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
-                    M.S. Computer Science '25
+                  <Typography sx={{ mb: '0.3rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif', fontSize: '1.05rem' }}>
+                    M.S. Computer Science &apos;25
                   </Typography>
-                  <Typography sx={{ color: '#666', fontSize: '0.95rem', fontFamily: '"LeagueSpartan", sans-serif' }}>
+                  <Typography sx={{ color: '#666', fontSize: '1.05rem', fontFamily: '"LeagueSpartan", sans-serif' }}>
                     Concentration in Human-Computer Interaction
                   </Typography>
                 </Box>
@@ -69,10 +69,10 @@ export default function About() {
                   <img src="/images/andover-logo.png" alt="Phillips Academy Logo" style={{ width: '100px', height: 'auto' }} />
                 </a>
                 <Box sx={{ border: 'none' }}>
-                  <Typography sx={{ fontWeight: 600, mb: '0.5rem', fontSize: '1.1rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
+                  <Typography sx={{ fontWeight: 600, mb: '0.5rem', fontSize: '1.15rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
                     Phillips Academy
                   </Typography>
-                  <Typography sx={{ mb: '0.3rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif' }}>
+                  <Typography sx={{ mb: '0.3rem', color: 'rgb(44, 62, 80)', fontFamily: '"LeagueSpartan", sans-serif', fontSize: '1.05rem' }}>
                     High School
                   </Typography>
                 </Box>
@@ -113,7 +113,7 @@ export default function About() {
               background: 'rgba(255,255,255,0.04)'
             }}>
               <Image
-                src="/images/grad-photo.jpg"
+                src="/images/grad-photo-crop.JPG"
                 alt="Peter Ling Graduation"
                 width={350}
                 height={540}
