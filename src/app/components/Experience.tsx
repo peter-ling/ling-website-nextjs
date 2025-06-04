@@ -8,7 +8,7 @@ interface JobExperience {
   title: string;
   company: string;
   period: string;
-  description: string;
+
   image?: string;
   details: string;
   location: string;
@@ -20,25 +20,30 @@ const experiences: JobExperience[] = [
     title: 'Software Engineer',
     company: 'TikTok',
     period: '2022 - Present',
-    description: 'Working on core infrastructure and performance optimization.',
     image: '/images/tiktok-team-image.webp',
     details: `At TikTok, the Solutions Engineering team works to help advertisers maximize their success on the platform. Here I had two main projects.
 
 I first built a tool to automate the process of closing poor performing ad groups for clients. While they could previously see which groups were not performing well, clients would need to manually go onto the TikTok ads platform and close them all individually, causing inefficiencies in optimizing ad group performance. Using Python, TikTok Marketing API, and different in-house Cloud APIs, I built this service that clients were beginning to be onboarded onto towards the end of my internship.
 
 Additionally, I took on a data engineering project to create new dashboards for solutions engineers at TikTok. Previously, SEs needed to go to several different tables and dashboards to get info on specific ad performance metrics and conversion rates. Putting them all together, I made it easier for SEs to quickly access the data they need to make informed decisions for their clients.`,
-    location: 'San Francisco, CA',
-    caption: 'Team offsite in San Francisco',
+    location: 'New York, NY',
+    caption: "My team's farewell party for my on my last day as an intern"
   },
   {
     title: 'Software Engineer',
     company: 'FanDuel',
     period: '2020 - 2022',
-    description: 'Developed and maintained sports betting platform features.',
     image: '/images/fanduel-photo.JPEG',
-    details: 'Built and maintained key features for the sports betting platform. Implemented real-time odds updates and user interface improvements that increased user engagement by 25%.',
+    details: `As a software engineering intern, I worked on a backend team responsible for receiving and constructing data from 3rd party sources into FanDuel's daily fantasy sports platform. My work included:\n\nWriting numerous API endpoints in Java to handle sports data while operating on the agile software development cycle.\n\nGaining an understanding of the company's engineering architecture to update services to new development stacks.\n\nUndergoing thorough testing and code review prior to releasing features onto production.\n\nParticipating in an intern hackathon team which conducted product research and presented new cross-selling features.`,
     location: 'New York, NY',
     caption: 'FanDuel NYC office',
+  }, 
+  {
+    title: 'Software Engineer',
+    company: 'Mercury Systems',
+    period: 'June 2022 - August 2022',
+    details: 'Spending a summer as a software engineering intern at Mercury introduced me to the world of aerospace and defense engineering. In my first professional software engineering experience, I learned how to communicate with other engineers on a scrum team. I completed my project, which was to create a packaging app in C/C++ that takes in a binary file representing the internal system of the V-22 Osprey plane, and to gain an understanding of public/private key encryption by using the OpenSSL library to ensure secure file loading.',
+    location: 'Torrance, CA',
   }
 ];
 
@@ -160,22 +165,21 @@ export default function Experience() {
                     color: 'rgb(44, 62, 80)',
                     lineHeight: 1.8,
                     marginBottom: 2,
-                    textAlign: 'center'
+                    textAlign: 'left',
+                    fontSize: '1.3rem',
                   }}>
                     {para}
                   </Typography>
                 ))}
                 {selectedJob.image && (
                   <>
-                    <Box sx={{ width: '100%', mt: 2, borderRadius: 2, overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.18)', display: 'flex', justifyContent: 'center' }}>
-                      <Image
-                        src={selectedJob.image}
-                        alt={`${selectedJob.company} office`}
-                        width={400}
-                        height={220}
-                        style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto', display: 'block' }}
-                      />
-                    </Box>
+                    <Image
+                      src={selectedJob.image}
+                      alt={`${selectedJob.company} office`}
+                      width={400}
+                      height={220}
+                      style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto', marginTop: 16 }}
+                    />
                     {selectedJob.caption && (
                       <Typography sx={{
                         fontStyle: 'italic',

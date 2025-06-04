@@ -12,6 +12,39 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import BlogPreview from './components/BlogPreview';
+
+// Sample blog data
+const sampleBlogPosts = [
+  {
+    id: '1',
+    title: 'Building a Modern Portfolio with Next.js',
+    excerpt: 'A deep dive into creating a responsive portfolio website using Next.js, Material-UI, and Tailwind CSS. Learn about the architecture decisions and best practices...',
+    date: 'March 15, 2024',
+    slug: 'building-modern-portfolio-nextjs'
+  },
+  {
+    id: '2',
+    title: 'The Evolution of Web Development',
+    excerpt: 'Exploring how web development has evolved from static HTML pages to dynamic, interactive applications. Understanding the key technologies that shaped modern web development...',
+    date: 'March 10, 2024',
+    slug: 'evolution-of-web-development'
+  },
+  {
+    id: '3',
+    title: 'Mastering TypeScript in React Applications',
+    excerpt: 'Learn how to leverage TypeScript to build more robust React applications. From basic type definitions to advanced patterns and best practices...',
+    date: 'March 5, 2024',
+    slug: 'mastering-typescript-react'
+  },
+  {
+    id: '4',
+    title: 'Optimizing Performance in Next.js Applications',
+    excerpt: 'Discover techniques for improving the performance of your Next.js applications. From image optimization to code splitting and server-side rendering...',
+    date: 'February 28, 2024',
+    slug: 'optimizing-nextjs-performance'
+  }
+];
 
 export default function Page() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,6 +56,7 @@ export default function Page() {
     { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
+    { label: 'Blog', href: '#blog' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -107,6 +141,7 @@ export default function Page() {
       <About />
       <Experience />
       <Projects />
+      <BlogPreview posts={sampleBlogPosts} />
       <Contact />
     </main>
   );

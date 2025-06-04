@@ -27,21 +27,21 @@ export default function Contact() {
   return (
     <section id="contact" style={{ 
       padding: '40px 0',
-      backgroundColor: 'var(--grey-color)'
+      backgroundColor: 'white'
     }}>
       <Container maxWidth="md">
         <Typography variant="h2" sx={{ 
           fontSize: { xs: '2rem', md: '3rem' },
           fontWeight: 800,
           fontFamily: '"LeagueSpartan", sans-serif',
-          color: 'var(--almond-color)',
+          color: 'rgb(44, 62, 80)',
           marginBottom: 2,
           textAlign: 'center'
         }}>
           Get in Touch
         </Typography>
         <Typography variant="h6" sx={{
-          color: 'var(--almond-color)',
+          color: 'rgb(44, 62, 80)',
           textAlign: 'center',
           fontWeight: 800,
           marginBottom: 3
@@ -53,10 +53,10 @@ export default function Contact() {
           <Button
             variant="contained"
             size="large"
-            href="mailto:your.email@example.com"
+            href="mailto:pling1@stanford.edu"
             sx={{
-              backgroundColor: 'var(--almond-color)',
-              color: 'var(--grey-color)',
+              backgroundColor: 'rgb(44, 62, 80)',
+              color: 'white',
               fontWeight: 800,
               fontSize: '1.5rem',
               borderRadius: '16px',
@@ -64,8 +64,8 @@ export default function Contact() {
               py: 2,
               boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
               '&:hover': {
-                backgroundColor: 'var(--green-color)',
-                color: 'var(--almond-color)'
+                backgroundColor: 'rgb(34, 52, 70)',
+                color: 'white'
               }
             }}
           >
@@ -74,12 +74,12 @@ export default function Contact() {
           <Button
             variant="contained"
             size="large"
-            href="https://www.linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/ling-peter/"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
-              backgroundColor: 'var(--almond-color)',
-              color: 'var(--grey-color)',
+              backgroundColor: 'rgb(44, 62, 80)',
+              color: 'white',
               fontWeight: 800,
               fontSize: '1.5rem',
               borderRadius: '16px',
@@ -87,8 +87,8 @@ export default function Contact() {
               py: 2,
               boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
               '&:hover': {
-                backgroundColor: 'var(--green-color)',
-                color: 'var(--almond-color)'
+                backgroundColor: 'rgb(34, 52, 70)',
+                color: 'white'
               }
             }}
           >
